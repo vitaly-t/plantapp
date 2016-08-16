@@ -6,12 +6,12 @@ Uses plant data from the [US Dept of Agricutlure Plants DB][plants-data]
 
 ## How it was built
 
-Created a new plantapp repo in Github. As a starting template for a React app, I like [webpack-express-boilerplate][boilerplate]. 
+Created a new plantapp repo in Github. I started with  [mobx-react-boilerplate](https://github.com/mobxjs/mobx-react-boilerplate). 
 Clone it into  plantapp/, remove the old git history, init, and push to the new repo.
 
 
 ```
-$ git clone https://github.com/christianalfoni/webpack-express-boilerplate.git plantapp
+$ git clone https://github.com/mobxjs/mobx-react-boilerplate.git plantapp
 $ cd plantapp
 $ rm -rf .git
 $ git init
@@ -40,7 +40,6 @@ $ mongoimport -d plantsdb -c plants --type csv --file data/plants.csv --headerli
 
 
 [plants-data]: https://plants.usda.gov/dl_all.html
-[boilerplate]: https://github.com/christianalfoni/webpack-express-boilerplate
 [mongoose]: http://mongoosejs.com
 [mongo]: https://www.mongodb.com
 [ncu]: https://www.npmjs.com/package/npm-check-updates
