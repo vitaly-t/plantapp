@@ -14,7 +14,7 @@ console.log("process.env.PORT", process.env.PORT);
 
 // If this is prod, serve the client build dir and set port
 if (process.env.NODE_ENV === "production") {
-  app.set('port', (process.env.PORT));
+  app.set('port', (process.env.PORT || 3001));
   app.use(express.static(path.join(__dirname, '../client/build')));
 } else {
   app.set('port', (process.env.SERVER_PORT || 3001));
